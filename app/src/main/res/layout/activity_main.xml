@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    tools:context="nt.com.creditcard.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            style="@style/TextAttributes">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="@string/card_balance"/>
+
+            <EditText
+                style="@style/EditText"
+                android:hint="@string/balance_hint"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/TextAttributes">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="@string/yearly_interest"/>
+
+            <EditText
+                style="@style/EditText"
+                android:hint="@string/interest_hint"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/TextAttributes">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="@string/minimum_payment"/>
+
+            <EditText
+                style="@style/EditText"
+                android:hint="@string/payment_hint"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/TextAttributes">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="@string/final_card_balance"/>
+
+            <View
+                style="@style/ResultBox"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/TextAttributes">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="@string/months_remaining"/>
+
+            <View
+            style="@style/ResultBox"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/TextAttributes">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="@string/interest_paid_text"/>
+
+            <View
+                style="@style/ResultBox"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ButtonAttributes">
+
+        <Button
+            style="@style/ButtonView"
+            android:text="@string/calculate_button"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ButtonAttributes">
+
+            <Button
+                style="@style/ButtonView"
+                android:text="@string/clear_button"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
